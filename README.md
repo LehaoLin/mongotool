@@ -1,1 +1,1 @@
-All operation in api.js
+All operations are in api.js
