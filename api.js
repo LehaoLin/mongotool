@@ -1,5 +1,5 @@
 import { connect } from "./insert.js";
-const { ObjectId } = require("mongodb");
+import { ObjectId } from "mongodb";
 
 export const insert = async (data, collection_name) => {
   const { db, client } = await connect();
