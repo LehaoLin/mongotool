@@ -1,4 +1,4 @@
-import { connect } from "./insert.js";
+import { connect } from "./connect.js";
 import { ObjectId } from "mongodb";
 
 export const insert = async (data, collection_name) => {
