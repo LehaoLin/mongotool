@@ -1,6 +1,7 @@
 import { insert, update, query, remove } from "./api.js";
 
 (async () => {
+  console.log('start test')
   await insert({ a: 1 }, "test");
   let result = await query({ a: 1 }, "test");
   console.log(result);

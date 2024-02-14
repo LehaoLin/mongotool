@@ -27,10 +27,10 @@ export const query = async (query, collection_name) => {
   return results;
 };
 
-export const remove = async (query, collection_name) => {
+export const remove = async (query_, collection_name) => {
   const { db, client } = await connect();
   const collection = db.collection(collection_name);
-  let results = await query(query, collection_name);
+  let results = await query(query_, collection_name);
   for (let result of results) {
     await collection.deleteOne({ _id: new ObjectId(result._id) });
     console.log(result._id, "deleted");
